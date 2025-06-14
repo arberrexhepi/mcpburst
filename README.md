@@ -1,4 +1,4 @@
-# mcp-hub
+# mcpburst
 
 Host an express app of streamablehttp and stdio MCP servers that you can use from your own website. (comes with a mini chat dialog to check responses)
 
@@ -31,8 +31,8 @@ Host an express app of streamablehttp and stdio MCP servers that you can use fro
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/arberrexhepi/mcp-hub.git
-   cd mcp-hub
+   git clone https://github.com/arberrexhepi/mcpburst.git
+   cd mcpburst
    ```
 
 2. Install root dependencies in root:
