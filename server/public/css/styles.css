@@ -1,0 +1,59 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+#chat {
+    width: 320px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+}
+
+#log {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#log li {
+    margin: .25rem 0;
+}
+
+.you {
+    text-align: right;
+    color: #006;
+}
+
+.bot {
+    text-align: left;
+    color: #080;
+}
+
+form {
+    display: flex;
+    gap: .5rem;
+}
+
+input {
+    flex: 1;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: .5rem 1rem;
+    border: none;
+    background: #006cff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}

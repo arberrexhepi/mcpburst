@@ -1,0 +1,26 @@
+{
+  "name": "mcp-hub-app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "build": "cd hub && npx tsc && cd .. && npm run copy:bridges",
+    "copy:bridges": "copyfiles -u 1 \"hub/bridges/**\" \"hub/dist\"",
+    "start:hub": "npm run build && cd ./hub && node ./dist/hub.js",
+    "start:server": "cd ./server/ && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^5.3.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}
